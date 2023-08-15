@@ -22,8 +22,9 @@ public class ReminderView extends FirestoreRecyclerAdapter<Reminders, ReminderVi
      *
      * @param options
      */
-    public ReminderView(@NonNull FirestoreRecyclerOptions<Reminders> options) {
+    public ReminderView(@NonNull FirestoreRecyclerOptions<Reminders> options, Context context) {
         super(options);
+        this.context = context;
     }
     //TODO pull info from DB here and store into variables to act on
 
@@ -35,8 +36,10 @@ public class ReminderView extends FirestoreRecyclerAdapter<Reminders, ReminderVi
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull ReminderViewer holder, int position, @NonNull Reminders model) {
-
+    protected void onBindViewHolder(@NonNull ReminderViewer holder, int position, @NonNull Reminders reminder) {
+        holder.titleOutput.setText(reminder.title);
+        holder.descOutput.setText(reminder.description);
+        holder.dateOutput.setText(reminder.date);
     }
 
     @Override

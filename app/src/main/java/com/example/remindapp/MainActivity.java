@@ -77,4 +77,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         return super.onOptionsItemSelected(item);
     }
+
+    void setRecyclerView(){
+        //TODO this is where I am setting the code for it to display on the main page
+    }
+
 }
