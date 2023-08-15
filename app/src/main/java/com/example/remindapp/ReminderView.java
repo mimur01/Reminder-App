@@ -1,6 +1,7 @@
 package com.example.remindapp;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -8,19 +9,33 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class reminderView extends RecyclerView.Adapter<reminderView.ReminderViewer>{
+import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+
+public class ReminderView extends FirestoreRecyclerAdapter<Reminders, ReminderView.ReminderViewer> {
 
     Context context;
+
+    /**
+     * Create a new RecyclerView adapter that listens to a Firestore Query.  See {@link
+     * FirestoreRecyclerOptions} for configuration options.
+     *
+     * @param options
+     */
+    public ReminderView(@NonNull FirestoreRecyclerOptions<Reminders> options) {
+        super(options);
+    }
     //TODO pull info from DB here and store into variables to act on
 
     @NonNull
     @Override
     public ReminderViewer onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.reminder_view,parent,false);
+        return new ReminderViewer(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ReminderViewer holder, int position) {
+    protected void onBindViewHolder(@NonNull ReminderViewer holder, int position, @NonNull Reminders model) {
 
     }
 
