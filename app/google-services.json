@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1061377206220",
+    "project_id": "remindapp-b21fb",
+    "storage_bucket": "remindapp-b21fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061377206220:android:e6e57c31def27f6477df69",
+        "android_client_info": {
+          "package_name": "com.example.remindapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061377206220-m5t328vl77ql5od16ihlkfr9a6218ovo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYO1ZndJuAolx1NjG3x71px2fThxZgJe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061377206220-m5t328vl77ql5od16ihlkfr9a6218ovo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

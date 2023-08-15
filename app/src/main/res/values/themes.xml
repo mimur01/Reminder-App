@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RemindApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.RemindApp" parent="Base.Theme.RemindApp" />
+
+    <!--    Menu Style-->
+    <style name="navigationTheme">
+        <!--        color of text and icon-->
+        <item name="colorPrimary">@color/Primary</item>
+        <!--        background color when sleected-->
+        <item name="colorControlHighlight">@color/Secondary</item>
+
+    </style>
+</resources>

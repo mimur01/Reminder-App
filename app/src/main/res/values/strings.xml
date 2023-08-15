@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ReminderApp</string>
+    <string name="home">Home</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="reminder_title">Reminders!</string>
+    <string name="reminder_app">Never Forget A Thing!</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="remindertopbar">REMINDERS</string>
+    <string name="addremindertop">ADD REMINDER</string>
+    <string name="addreminderbtn">+</string>
+    <string name="addremtitle">Title</string>
+    <string name="addremdesc">Description</string>
+    <string name="saverembtn">SAVE</string>
+    <string name="addremdate">Date</string>
+
+
+</resources>
